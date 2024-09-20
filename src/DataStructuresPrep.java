@@ -133,7 +133,12 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int respotencia = 1;
+        for (int i = 1; i <= exponent; i++){
+            respotencia *= base;
+        }
+        return respotencia;
+
     }
 
     /**
@@ -144,7 +149,18 @@ public class DataStructuresPrep {
      *         Ejemplo: isPrime(5) retorna true.
      */
     public boolean isPrime(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int contPrimo = 0;
+
+        for (int i = 1; i < number; i++){
+            if (number % i == 0){
+                contPrimo+=i;
+            }
+        }
+        if (contPrimo <= 2){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     /**
@@ -155,6 +171,11 @@ public class DataStructuresPrep {
      *         Ejemplo: countDigits(12345) retorna 5.
      */
     public int countDigits(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultadoDigit = 0; 
+        while (number > 0){
+            number /= 10;
+            resultadoDigit++;
+        }
+        return resultadoDigit;
     }
 }

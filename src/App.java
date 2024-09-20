@@ -27,9 +27,10 @@ public class App {
          * podemos
          * realizar operaciones básicas de manera creativa en programación.
          */
-        int resultado = dataStructuresPrep.findMaximum(new int[]{1, 5, 3, 6, 8, 2});
-
+        int resultado = dataStructuresPrep.countDigits(12345);
+        
         /*
+
          * Imprimir el resultado de la operación.
          * 
          * Finalmente, imprimimos el resultado de la operación a la consola. Esto nos
