@@ -27,7 +27,7 @@ public class App {
          * podemos
          * realizar operaciones básicas de manera creativa en programación.
          */
-        int resultado = dataStructuresPrep.subtractAlgorithm(15, 5);
+        int resultado = dataStructuresPrep.findMaximum(new int[]{1, 5, 3, 6, 8, 2});
 
         /*
          * Imprimir el resultado de la operación.

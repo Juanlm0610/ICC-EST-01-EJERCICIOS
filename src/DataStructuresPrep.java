@@ -26,7 +26,11 @@ public class DataStructuresPrep {
      *         Ejemplo: subtractAlgorithm(5, 3) retorna 2.
      */
     public int subtractAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int count = 0;
+        while (a > (b + count)) {
+            count++;
+        }
+        return count;
     }
 
     /**
@@ -38,7 +42,11 @@ public class DataStructuresPrep {
      *         Ejemplo: multiplyAlgorithm(5, 3) retorna 15.
      */
     public int multiplyAlgorithm(int a, int b) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int ressultao = 0;
+        for (int i = 0; i < b; i++){
+            ressultao += a; 
+        }
+        return ressultao;
 
     }
 
@@ -51,8 +59,11 @@ public class DataStructuresPrep {
      *         Ejemplo: divideWAlgorithm(10, 2) retorna 5.
      */
     public int divideWAlgorithm(int dividend, int divisor) {
-        throw new UnsupportedOperationException("Not yet implemented");
-
+        int resultadoDiv = 0;
+        for (int i = 0; i < dividend; i+=divisor){
+            resultadoDiv++;
+        }
+        return resultadoDiv;
     }
 
     /**
@@ -64,7 +75,18 @@ public class DataStructuresPrep {
      *         Ejemplo: isPerfectNumber(28) retorna true.
      */
     public boolean isPerfectNumber(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int contPerfect = 0;
+
+        for (int i = 1; i < number; i++){
+            if (number % i == 0){
+                contPerfect+=i;
+            }
+        }
+        if (contPerfect == number){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     /**
@@ -75,7 +97,13 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultadoFact = 1;
+
+        for (int i = 1; i < number + 1; i++){
+            resultadoFact *= i;
+
+        }
+        return resultadoFact;
     }
 
     /**
@@ -86,7 +114,14 @@ public class DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int lengthArray = numbers.length;
+        int max= numbers[0];
+        for (int i = 0; i < lengthArray; i++){
+            if (numbers[i] > max) {
+                max = numbers[i];
+            } 
+        }
+        return max;
     }
 
     /**
