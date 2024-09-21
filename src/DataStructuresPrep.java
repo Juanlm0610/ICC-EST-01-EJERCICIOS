@@ -43,8 +43,8 @@ public class DataStructuresPrep {
      */
     public int multiplyAlgorithm(int a, int b) {
         int ressultao = 0;
-        for (int i = 0; i < b; i++){
-            ressultao += a; 
+        for (int i = 0; i < b; i++) {
+            ressultao += a;
         }
         return ressultao;
 
@@ -60,7 +60,7 @@ public class DataStructuresPrep {
      */
     public int divideWAlgorithm(int dividend, int divisor) {
         int resultadoDiv = 0;
-        for (int i = 0; i < dividend; i+=divisor){
+        for (int i = 0; i < dividend; i += divisor) {
             resultadoDiv++;
         }
         return resultadoDiv;
@@ -77,14 +77,14 @@ public class DataStructuresPrep {
     public boolean isPerfectNumber(int number) {
         int contPerfect = 0;
 
-        for (int i = 1; i < number; i++){
-            if (number % i == 0){
-                contPerfect+=i;
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
+                contPerfect += i;
             }
         }
-        if (contPerfect == number){
+        if (contPerfect == number) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
@@ -99,7 +99,7 @@ public class DataStructuresPrep {
     public int getFactorial(int number) {
         int resultadoFact = 1;
 
-        for (int i = 1; i < number + 1; i++){
+        for (int i = 1; i < number + 1; i++) {
             resultadoFact *= i;
 
         }
@@ -115,11 +115,11 @@ public class DataStructuresPrep {
      */
     public int findMaximum(int[] numbers) {
         int lengthArray = numbers.length;
-        int max= numbers[0];
-        for (int i = 0; i < lengthArray; i++){
+        int max = numbers[0];
+        for (int i = 0; i < lengthArray; i++) {
             if (numbers[i] > max) {
                 max = numbers[i];
-            } 
+            }
         }
         return max;
     }
@@ -134,7 +134,7 @@ public class DataStructuresPrep {
      */
     public int powerAlgorithm(int base, int exponent) {
         int respotencia = 1;
-        for (int i = 1; i <= exponent; i++){
+        for (int i = 1; i <= exponent; i++) {
             respotencia *= base;
         }
         return respotencia;
@@ -151,14 +151,14 @@ public class DataStructuresPrep {
     public boolean isPrime(int number) {
         int contPrimo = 0;
 
-        for (int i = 1; i < number; i++){
-            if (number % i == 0){
-                contPrimo+=i;
+        for (int i = 1; i < number; i++) {
+            if (number % i == 0) {
+                contPrimo += i;
             }
         }
-        if (contPrimo <= 2){
+        if (contPrimo <= 2) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
@@ -171,8 +171,8 @@ public class DataStructuresPrep {
      *         Ejemplo: countDigits(12345) retorna 5.
      */
     public int countDigits(int number) {
-        int resultadoDigit = 0; 
-        while (number > 0){
+        int resultadoDigit = 0;
+        while (number > 0) {
             number /= 10;
             resultadoDigit++;
         }

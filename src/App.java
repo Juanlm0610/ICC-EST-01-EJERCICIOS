@@ -27,10 +27,17 @@ public class App {
          * podemos
          * realizar operaciones básicas de manera creativa en programación.
          */
-        int resultado = dataStructuresPrep.countDigits(12345);
-        
+        int resultado = dataStructuresPrep.subtractAlgorithm(12,5);
+        int resultao = dataStructuresPrep.multiplyAlgorithm(3,5);
+        int resultadoDiv = dataStructuresPrep.divideWAlgorithm(20,5);
+        boolean resperfect = dataStructuresPrep.isPerfectNumber(28);
+        int resfact = dataStructuresPrep.getFactorial(5);
+        int resmax = dataStructuresPrep.findMaximum(new int[]{1, 5, 3, 6, 8, 2});
+        int respower = dataStructuresPrep.powerAlgorithm(2,4);
+        boolean resprime = dataStructuresPrep.isPrime(13);
+        int resdigit = dataStructuresPrep.countDigits(3546747);
         /*
-
+         * 
          * Imprimir el resultado de la operación.
          * 
          * Finalmente, imprimimos el resultado de la operación a la consola. Esto nos
@@ -45,6 +52,14 @@ public class App {
          * parte de mensajes de salida o en lógicas de decisión más complejas.
          */
         System.out.println("El resultado de subtractAlgorithm  es: " + resultado);
+        System.out.println("El resultado de multiplyAlgorithm  es: " + resultao);
+        System.out.println("El resultado de divideWAlgoritm es: " + resultadoDiv);
+        System.out.println("El resultado de isPerfectNUmber es: " + resperfect);
+        System.out.println("El resultado de getFactorial es: " + resfact);
+        System.out.println("El resultado de findMaximum es: " + resmax);
+        System.out.println("El resultado de powerAlgorithm es: " + respower);
+        System.out.println("El resultado de isPrime es: " + resprime);
+        System.out.println("El resultado de coutDigits es: " + resdigit);
 
     }
 }
